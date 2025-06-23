@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BICTDA Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="padding: 50px; text-align: center;">
+        <h1 style="color: #007F3E; font-size: 3rem; margin-bottom: 20px;">BICTDA Test Page</h1>
+        <div class="glass-card" style="max-width: 400px; margin: 0 auto; padding: 30px;">
+            <h2 style="color: #007F3E; margin-bottom: 15px;">CSS is Working!</h2>
+            <p style="color: #666;">If you can see this card with a glass effect and green colors, the CSS is loading correctly.</p>
+        </div>
+        <div style="margin-top: 30px;">
+            <button onclick="testJS()" style="background: #007F3E; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Test JavaScript</button>
+        </div>
+        <div id="js-test" style="margin-top: 20px; color: #007F3E; font-weight: bold;"></div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script>
+        function testJS() {
+            document.getElementById('js-test').innerHTML = 'JavaScript is working! Chart colors: ' + JSON.stringify(chartColors);
+        }
+    </script>
+</body>
+</html> 
